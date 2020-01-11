@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+import { Link } from 'react-router-dom'
 const useStyles = makeStyles({
     card: {
         maxWidth: 345,
@@ -19,7 +19,8 @@ export default (props) => {
     const classes = useStyles();
 
     return (
-        <Card className={classes.card}>
+
+        <Link to={`/personangem?id=${props.id}`} ><Card className={classes.card}>
             <CardActionArea>
                 <CardMedia
                     component="img"
@@ -33,8 +34,8 @@ export default (props) => {
                         {props.name}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                        across all continents except Antarctica
           </Typography>
                 </CardContent>
             </CardActionArea>
@@ -47,5 +48,6 @@ export default (props) => {
         </Button>
             </CardActions>
         </Card>
+        </Link>
     );
 }
