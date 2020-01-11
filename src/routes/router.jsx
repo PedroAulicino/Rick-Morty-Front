@@ -12,7 +12,7 @@ import navegando from "../page/chacter/chacter.page"
 export default () => {
     return <Router>
         <Switch>
-            <Route path="/personangem" component={navegando} ></Route>
+            <Route path="/persona" component={navegando} ></Route>
             <Route path="/home" component={HomePage} ></Route>
 
             <Route path="/*" component={HomePage} ></Route>
