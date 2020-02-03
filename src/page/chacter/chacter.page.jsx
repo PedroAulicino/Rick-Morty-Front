@@ -10,7 +10,6 @@ export default () => {
   const search = useLocation().search;
 
   const fetchUser = async () => {
-    console.log("aui");
     // console.log(useLocation())
     const params = new URLSearchParams(search);
     const user = await API().get(`character/${params.get("id")}`);
