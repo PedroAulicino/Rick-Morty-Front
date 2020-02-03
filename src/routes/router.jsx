@@ -8,7 +8,7 @@ export default () => {
   return (
     <Router>
       <Switch>
-        <Route path="/persona" component={personangem}></Route>
+        <Route path="/personagem" component={personangem}></Route>
 
         <Route path="/" component={HomePage}></Route>
       </Switch>
