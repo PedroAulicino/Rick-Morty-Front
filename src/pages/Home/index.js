@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Button } from "./styled";
-import API from "../../Services/Api";
+import API from "../../services/Api";
 import { Link } from "react-router-dom";
 import BarComponent from "../../components/bar";
 import CircularProgress from "@material-ui/core/CircularProgress";
