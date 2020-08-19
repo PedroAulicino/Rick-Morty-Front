@@ -3,4 +3,4 @@ Rick and Morty, onde o foco foi desenvolver uma aplicação Front-End utilizando
 
 Npm install para instalar NodeModules 
 
-Npm start para inicia
+Npm start para iniciar
